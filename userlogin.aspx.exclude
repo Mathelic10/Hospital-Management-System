@@ -1,0 +1,36 @@
+<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="userlogin.aspx.cs" Inherits="userlogin" Title="Untitled Page" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:Panel ID="Panel1" runat="server" Height="248px" Style="z-index: 100; left: 104px;
+        position: absolute; top: 304px" Width="368px">
+        <table style="z-index: 100; left: 40px; position: absolute; top: 72px">
+            <tr>
+                <td style="width: 100px; height: 21px">
+                    <span style="color: red">UserID:</span></td>
+                <td style="width: 100px; height: 21px">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                    <span style="color: red">Password:</span></td>
+                <td style="width: 100px">
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td style="width: 100px; height: 21px">
+                </td>
+                <td style="width: 100px; height: 21px">
+                    <asp:Button ID="Button1" runat="server" Text="Login" /></td>
+            </tr>
+        </table>
+        <asp:Menu ID="Menu1" runat="server" Font-Underline="True" ForeColor="Red" Orientation="Horizontal"
+            Style="z-index: 101; left: 64px; position: absolute; top: 184px">
+            <Items>
+                <asp:MenuItem Text="New user Signup" Value="New user Signup"></asp:MenuItem>
+                <asp:MenuItem Text="|Forgot Password?" Value="|Forgot Password?"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </asp:Panel>
+    <asp:Image ID="Image1" runat="server" Height="208px" ImageUrl="~/pics/hospital.jpg"
+        Style="z-index: 102; left: 616px; position: absolute; top: 344px" Width="208px" />
+</asp:Content>
+
